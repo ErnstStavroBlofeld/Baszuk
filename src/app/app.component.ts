@@ -11,7 +11,7 @@ import { RouteAnimation } from './app.animations';
   ]
 })
 export class AppComponent {
-  prepareRoute(outlet: RouterOutlet) {
+  prepareRoute(outlet: RouterOutlet): object {
     return outlet && outlet.activatedRouteData;
   }
 }
