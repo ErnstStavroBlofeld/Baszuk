@@ -45,7 +45,6 @@
             "tsConfig": "tsconfig.app.json",
             "aot": true,
             "assets": [
-              "src/assets/icon.ico",
               "src/assets"
             ],
             "styles": [
