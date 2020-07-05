@@ -38,3 +38,23 @@ span img {
   height: 1.5em;
   padding-right: .5em;
 }
+
+@media (max-width: 600px) {
+  :host {
+    display: block;
+    text-align: center;
+  }
+
+  .image {
+    margin: 2em 0;
+  }
+
+  .image img {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  span {
+    justify-content: center;
+  }
+}
