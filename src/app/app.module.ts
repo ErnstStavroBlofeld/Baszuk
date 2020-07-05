@@ -12,6 +12,7 @@ import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { BannerComponent } from './banner/banner.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { BusinessCardComponent } from './business-card/business-card.component';
+import { SectionComponent } from './section/section.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { BusinessCardComponent } from './business-card/business-card.component';
     NotFoundComponent,
     BannerComponent,
     ContactComponent,
-    BusinessCardComponent
+    BusinessCardComponent,
+    SectionComponent
   ],
   imports: [
     BrowserModule,

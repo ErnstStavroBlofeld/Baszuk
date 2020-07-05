@@ -1,0 +1,21 @@
+:host {
+  display: block;
+  max-width: 800px;
+  margin: 5em auto;
+  padding: 0 1em;
+}
+
+:host /deep/ h1:before,
+:host /deep/ h2:before,
+:host /deep/ h3:before,
+:host /deep/ h4:before,
+:host /deep/ h5:before,
+:host /deep/ h6:before {
+  content: ' ';
+  display: inline-block;
+  width: .75em;
+  height: .75em;
+  margin-right: .5em;
+  background-color: var(--accent);
+  clip-path: polygon(100% 50%, 0 0, 0 100%);
+}

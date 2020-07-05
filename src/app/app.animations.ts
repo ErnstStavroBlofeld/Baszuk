@@ -15,7 +15,7 @@ export const RouteAnimation = trigger('routeAnimation', [
         transform: 'scale(0) translateY(100%)'
       })
     ], Optional),
-    query('section', [
+    query('app-section', [
       style({
         opacity: 0
       })
@@ -26,7 +26,7 @@ export const RouteAnimation = trigger('routeAnimation', [
         style({opacity: 1, transform: 'scale(1) translateY(0)'})
       )
     ], Optional),
-    query('section', [
+    query('app-section', [
       stagger('300ms', [
         animate('200ms', style({
           opacity: 1

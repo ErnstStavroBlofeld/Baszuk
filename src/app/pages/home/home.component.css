@@ -1,16 +1,1 @@
-section {
-  max-width: 800px;
-  margin: 5em auto;
-  padding: 0 1em;
-}
-
-section h1:before {
-  content: ' ';
-  display: inline-block;
-  width: .75em;
-  height: .75em;
-  margin-right: .5em;
-  background-color: var(--accent);
-  clip-path: polygon(100% 50%, 0 0, 0 100%);
-}
 
