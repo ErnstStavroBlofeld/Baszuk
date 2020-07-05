@@ -8,9 +8,9 @@ import { HeaderComponent } from './header/header.component';
 import { LinkComponent } from './link/link.component';
 import { HomeComponent } from './pages/home/home.component';
 import { AboutComponent } from './pages/about/about.component';
-import { ProjectsComponent } from './pages/projects/projects.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { BannerComponent } from './banner/banner.component';
+import { ContactComponent } from './pages/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -19,9 +19,9 @@ import { BannerComponent } from './banner/banner.component';
     LinkComponent,
     HomeComponent,
     AboutComponent,
-    ProjectsComponent,
     NotFoundComponent,
-    BannerComponent
+    BannerComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
