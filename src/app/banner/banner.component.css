@@ -33,3 +33,10 @@ span {
    width: fit-content !important;
  }
 }
+
+
+@media (max-width: 400px) {
+  div {
+    font-size: 3em;
+  }
+}
