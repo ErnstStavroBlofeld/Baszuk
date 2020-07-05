@@ -1,7 +1,7 @@
 :host {
   display: flex;
   max-width: 600px;
-  margin: 0 auto;
+  margin: 3em auto;
 }
 
 .image {
