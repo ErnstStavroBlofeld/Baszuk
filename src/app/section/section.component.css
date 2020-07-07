@@ -16,6 +16,6 @@
   width: .75em;
   height: .75em;
   margin-right: .5em;
-  background-color: var(--accent);
+  background-color: var(--background30);
   clip-path: polygon(100% 50%, 0 0, 0 100%);
 }

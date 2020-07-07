@@ -28,7 +28,9 @@
   --text30: #838383;
   --text40: #404040;
 
-  --accent: #04ff75;
+  --accent10: #700054;
+  --accent20: #9e0064;
+  --accent30: #ff5b3d;
 }
 
 body {

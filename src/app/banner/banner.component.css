@@ -42,7 +42,8 @@
 :host {
   display: block;
   max-width: 1200px;
-  margin: 2em auto;
+  margin: 7.5em auto;
+  overflow: hidden;
   padding: 0 1em;
 }
 
@@ -70,4 +71,22 @@ svg {
 
 .triangle {
   transform-origin: 1610px 635px;
+}
+
+@media (max-width: 500px) {
+  svg {
+
+  }
+
+  .texts {
+    transform: scale(2);
+  }
+
+  .baszuk {
+    transform: translateX(-40%);
+  }
+
+  .shapes {
+    display: none;
+  }
 }
