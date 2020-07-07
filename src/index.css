@@ -23,7 +23,7 @@
   --background20: #181818;
   --background30: #292929;
 
-  --text10: #fff;
+  --text10: #ffffff;
   --text20: #c8c8c8;
   --text30: #838383;
   --text40: #404040;
@@ -38,13 +38,12 @@ body {
   padding: 0;
 
   font-family: var(--font-text);
-  font-smooth: subpixel-antialiased;
   font-size: 16px;
 
   color: var(--text10);
   background-color: var(--background10);
 }
 
-img {
+img, svg {
   width: 100%;
 }
