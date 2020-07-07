@@ -1,42 +1,73 @@
-div {
-  max-width: 700px;
-  margin: 0 auto;
-  padding: 1em 0;
-
-  font-size: 4em;
-  font-family: var(--font-header);
-
-  transition: all ease .5s;
-}
-
-p {
-  margin: 0;
-  font-weight: bold;
-}
-
-p:nth-child(2) {
-  margin-left: 2.75em;
-}
-
-p:nth-child(3) {
-  margin-left: 5.25em;
-}
-
-p:nth-child(2),
-span {
-  color: var(--accent);
-}
-
-@media (max-width: 700px) {
- p {
-   margin: 0 auto !important;
-   width: fit-content !important;
- }
-}
-
-
-@media (max-width: 400px) {
-  div {
-    font-size: 3em;
+@keyframes textAnimation {
+  0% {
+    opacity: 0;
+    transform: scale(0.1) rotate(30deg);
+    transform-origin: center bottom;
   }
+
+  50% {
+    transform: rotate(-10deg);
+  }
+
+  70% {
+    transform: rotate(3deg);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes shapeHideAnimation {
+  0%, 100% {
+    opacity: 0;
+  }
+}
+
+@keyframes shapeAnimation {
+  0% {
+    transform: scale(.1) rotate(-40deg);
+  }
+
+  50% {
+    transform: scale(1) rotate(-40deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+:host {
+  display: block;
+  max-width: 1200px;
+  margin: 2em auto;
+  padding: 0 1em;
+}
+
+svg {
+  animation: textAnimation .75s;
+}
+
+.shapes {
+  animation: shapeHideAnimation .75s;
+}
+
+.circle,
+.square,
+.triangle {
+  animation: shapeAnimation .75s ease .75s;
+}
+
+.circle {
+  transform-origin: 225px 225px;
+}
+
+.square {
+  transform-origin: 925px 400px;
+}
+
+.triangle {
+  transform-origin: 1610px 635px;
 }
