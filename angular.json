@@ -48,7 +48,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/index.css"
+              "src/index.scss"
             ],
             "scripts": []
           },
@@ -116,5 +116,10 @@
       }
     }
   },
-  "defaultProject": "baszuk"
+  "defaultProject": "baszuk",
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "scss"
+    }
+  }
 }

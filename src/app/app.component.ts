@@ -5,7 +5,7 @@ import { RouteAnimation } from './app.animations';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'],
+  styleUrls: ['./app.component.scss'],
   animations: [
     RouteAnimation
   ]
