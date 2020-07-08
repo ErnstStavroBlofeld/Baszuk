@@ -10,6 +10,7 @@ import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { LinkComponent } from './link/link.component';
+import { BannerComponent } from './banner/banner.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { LinkComponent } from './link/link.component';
     AboutComponent,
     NotFoundComponent,
     NavigationComponent,
-    LinkComponent
+    LinkComponent,
+    BannerComponent
   ],
   imports: [
     BrowserModule,
