@@ -18,3 +18,14 @@ nav {
     text-align: right;
   }
 }
+
+@media (max-width: $smallWidth) {
+  nav {
+    display: block;
+
+    & div {
+      text-align: center !important;
+      padding: .5em;
+    }
+  }
+}
