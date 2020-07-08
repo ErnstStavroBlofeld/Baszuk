@@ -8,6 +8,8 @@ import { HomeComponent } from './pages/home/home.component';
 import { AboutComponent } from './pages/about/about.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { ContactComponent } from './pages/contact/contact.component';
+import { NavigationComponent } from './navigation/navigation.component';
+import { LinkComponent } from './link/link.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { ContactComponent } from './pages/contact/contact.component';
     HomeComponent,
     ContactComponent,
     AboutComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    NavigationComponent,
+    LinkComponent
   ],
   imports: [
     BrowserModule,
@@ -25,4 +29,5 @@ import { ContactComponent } from './pages/contact/contact.component';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}
