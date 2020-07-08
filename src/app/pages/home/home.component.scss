@@ -4,7 +4,6 @@
   0% {
     opacity: 0;
     transform: scale(0.1) rotate(30deg);
-    transform-origin: center bottom;
   }
 
   50% {
@@ -61,6 +60,7 @@
 
   & .wrapper {
     animation: textAnimation .75s linear;
+    transform-origin: center bottom;
   }
 
   & h1,
@@ -94,7 +94,7 @@
     position: relative;
     width: min(30vw, 20em);
     height: min(30vw, 20em);
-    background: linear-gradient(to bottom, lighten($backgroundColor, 10%), transparent);
+    background: linear-gradient(to bottom, lighten($backgroundColor, 15%), transparent);
     mask: $noise;
     transform: rotate(-40deg);
     animation: shapeAnimation .75s ease 1s;
