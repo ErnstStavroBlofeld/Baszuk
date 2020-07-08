@@ -1,3 +1,5 @@
+@import 'base';
+
 @font-face {
   font-family: 'Prodigy Sans';
   font-weight: 300;
@@ -16,36 +18,16 @@
   src: url('assets/font/prodigy-sans-medium.woff2') format('woff2');
 }
 
-:root {
-  --font-text: 'Prodigy Sans', sans-serif;
-
-  --background10: #0E0E0E;
-  --background20: #181818;
-  --background30: #292929;
-
-  --text10: #ffffff;
-  --text20: #c8c8c8;
-  --text30: #838383;
-  --text40: #404040;
-
-  --accent10: #700054;
-  --accent20: #9e0064;
-  --accent30: #ff5b3d;
-
-  --width10: 500px;
-  --width20: 800px;
-  --width-lg: 1000px;
-}
 
 body {
   margin: 0;
   padding: 0;
 
-  font-family: var(--font-text);
+  font-family: 'Prodigy Sans', sans-serif;
   font-size: 18px;
 
-  color: var(--text10);
-  background-color: var(--background10);
+  color: $textColor;
+  background-color: $backgroundColor;
 }
 
 img, svg {
