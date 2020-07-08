@@ -40,10 +40,6 @@
   }
 }
 
-:host {
-  display: block;
-}
-
 .banner,
 .shapes {
   position: absolute;
@@ -94,7 +90,7 @@
     position: relative;
     width: min(30vw, 20em);
     height: min(30vw, 20em);
-    background: linear-gradient(to bottom, lighten($backgroundColor, 15%), transparent);
+    background: linear-gradient(to bottom, lighten($backgroundColor, 15%), transparent 90%);
     mask: $noise;
     transform: rotate(-40deg);
     animation: shapeAnimation .75s ease 1s;
