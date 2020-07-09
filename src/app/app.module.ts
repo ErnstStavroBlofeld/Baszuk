@@ -4,28 +4,24 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
-import { LinkComponent } from './link/link.component';
+import { NavigationComponent } from './navigation/navigation.component';
 import { HomeComponent } from './pages/home/home.component';
 import { AboutComponent } from './pages/about/about.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
-import { BannerComponent } from './banner/banner.component';
 import { ContactComponent } from './pages/contact/contact.component';
-import { BusinessCardComponent } from './business-card/business-card.component';
-import { SectionComponent } from './section/section.component';
+import { LinkComponent } from './link/link.component';
+import { ParallaxDirective } from './parallax.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
     LinkComponent,
+    NavigationComponent,
     HomeComponent,
+    ContactComponent,
     AboutComponent,
     NotFoundComponent,
-    BannerComponent,
-    ContactComponent,
-    BusinessCardComponent,
-    SectionComponent
+    ParallaxDirective
   ],
   imports: [
     BrowserModule,
@@ -35,4 +31,5 @@ import { SectionComponent } from './section/section.component';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

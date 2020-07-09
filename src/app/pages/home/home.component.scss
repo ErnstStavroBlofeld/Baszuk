@@ -1,0 +1,57 @@
+@import '../../../base';
+
+@keyframes bannerExpand {
+  0% {
+    background-size: 0 100%;
+  }
+
+  100% {
+    background-size: min(17vw, 3.25em) 100%;
+  }
+}
+
+@keyframes subtextExpand {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+section {
+  max-width: $mediumWidth;
+  padding: 2em 0;
+  margin: 0 auto;
+}
+
+.banner div {
+  margin: 3em 0 5em 0;
+  font-size: 2em;
+  background: linear-gradient(white, white) no-repeat;
+  background-size: min(17vw, 3.25em) 100%;
+
+  animation: bannerExpand 2s ease;
+
+  & h1 {
+    margin: 0;
+    font-size: min(25vw, 5em);
+    font-weight: 200;
+    letter-spacing: .1em;
+    user-select: none;
+    mix-blend-mode: difference;
+  }
+}
+
+.hello {
+  text-align: right;
+
+  & h1 {
+    margin: 0;
+    font-weight: normal;
+    font-size: 2em;
+  }
+}

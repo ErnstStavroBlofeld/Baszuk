@@ -1,0 +1,24 @@
+@import '../../base';
+
+:host {
+  margin: 0 .2em;
+}
+
+:host(.simple) a {
+  background: none;
+  padding: 0;
+  transition: none;
+}
+
+a {
+  color: $textColor;
+  background: radial-gradient(white, white) no-repeat center bottom;
+  padding: .3em;
+  text-decoration: none;
+  background-size: 30% 7.5%;
+  transition: all .2s ease;
+
+  &:hover {
+    background-size: 100% 7.5%;
+  }
+}

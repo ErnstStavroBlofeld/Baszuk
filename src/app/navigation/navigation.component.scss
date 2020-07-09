@@ -1,0 +1,35 @@
+@import '../../base';
+
+:host {
+  display: block;
+}
+
+nav {
+  display: flex;
+  margin: 0 auto;
+  padding: 1em 0;
+  max-width: $mediumWidth;
+
+  font-size: 1.75em;
+
+  div {
+    flex: 1;
+  }
+
+  div:nth-child(2) {
+    font-size: .75em;
+    line-height: 1.75em;
+    text-align: right;
+  }
+}
+
+@media (max-width: $smallWidth) {
+  nav {
+    display: block;
+
+    & div {
+      text-align: center !important;
+      padding: .5em;
+    }
+  }
+}

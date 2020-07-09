@@ -3,8 +3,8 @@ import { Component, Input } from '@angular/core';
 @Component({
   selector: 'app-link',
   templateUrl: './link.component.html',
-  styleUrls: ['./link.component.css']
+  styleUrls: ['./link.component.scss']
 })
-export class LinkComponent{
+export class LinkComponent {
   @Input() to: string;
 }
