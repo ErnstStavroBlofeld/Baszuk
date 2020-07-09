@@ -12,18 +12,6 @@ $strikeWidth: min(17vw, 3.25em);
   }
 }
 
-@keyframes subtextExpand {
-  0% {
-    transform: translateY(-100%);
-    opacity: 0;
-  }
-
-  100% {
-    transform: translateY(0%);
-    opacity: 1;
-  }
-}
-
 section {
   max-width: $mediumWidth;
   padding: 3em 0;
@@ -51,7 +39,7 @@ section {
   & span {
     font-size: 2em;
     display: inline-block;
-    width: min(17vw, 3.25em);
+    width: $strikeWidth;
     height: 2em;
     background: linear-gradient(white, white) no-repeat;
     clip-path: polygon(50% 100%, 0 0, 100% 0);
