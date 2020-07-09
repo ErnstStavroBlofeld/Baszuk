@@ -45,7 +45,28 @@
 }
 
 @media (max-width: $mediumWidth) {
+  .a {
+    top: -20%;
+    left: -20%;
+  }
+
   .b {
-    --size: 0;
+    top: 40%;
+    left: -2%;
+  }
+
+  .c {
+    top: 10%;
+    left: 70%;
+  }
+
+  .d {
+    top: 90%;
+    left: 50%;
+  }
+
+  .e {
+    top: 100%;
+    left: -5%;
   }
 }

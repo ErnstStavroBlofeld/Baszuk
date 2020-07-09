@@ -1,6 +1,19 @@
 @import '../../../base';
 
-section:first-child {
+section {
+  max-width: $mediumWidth;
+  margin: 0 auto;
+  padding: 1em 0;
+  text-align: center;
+}
+
+section h1 {
+  font-weight: 200;
+  font-size: 3.5em;
+}
+
+.banner {
+  max-width: unset;
   height: 90vh;
   display: flex;
   flex-direction: column;
@@ -8,7 +21,8 @@ section:first-child {
 }
 
 @media (max-width: $smallWidth) {
-  section:first-child {
+  .banner:first-child {
     height: 60vh;
+    width: 100%;
   }
 }
