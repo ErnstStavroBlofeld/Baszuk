@@ -1,0 +1,51 @@
+@import '../../base';
+
+.wrapper {
+  overflow: hidden;
+}
+
+.wrapper div {
+  position: fixed;
+  width: var(--size);
+  height: var(--size);
+  border-radius: calc(var(--size) / 2);
+  background: linear-gradient(145deg, lighten($backgroundColor, 10%), transparent 90%);
+  mask: $noise;
+  z-index: -10;
+}
+
+.a {
+  --size: 20em;
+  top: 2.5%;
+  left: 5%;
+}
+
+.b {
+  --size: 15em;
+  top: 30%;
+  left: 40%;
+}
+
+.c {
+  --size: 30em;
+  top: 20%;
+  left: 70%;
+}
+
+.d {
+  --size: 10em;
+  top: 60%;
+  left: 5%;
+}
+
+.e {
+  --size: 20em;
+  top: 80%;
+  left: 50%;
+}
+
+@media (max-width: $mediumWidth) {
+  .b {
+    --size: 0;
+  }
+}

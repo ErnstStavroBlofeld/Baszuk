@@ -1,4 +1,6 @@
-<app-navigation></app-navigation>
-<main [@routeAnimation]="prepareRoute(outlet)">
-  <router-outlet #outlet="outlet"></router-outlet>
-</main>
+<app-background>
+  <app-navigation></app-navigation>
+  <main [@routeAnimation]="prepareRoute(outlet)">
+    <router-outlet #outlet="outlet"></router-outlet>
+  </main>
+</app-background>

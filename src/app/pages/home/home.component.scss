@@ -1,1 +1,14 @@
 @import '../../../base';
+
+section:first-child {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (max-width: $smallWidth) {
+  section:first-child {
+    height: 60vh;
+  }
+}
