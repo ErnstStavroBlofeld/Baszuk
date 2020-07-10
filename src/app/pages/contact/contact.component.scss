@@ -10,8 +10,8 @@ div {
     padding: 1em;
     font-weight: 200;
     font-size: 2em;
-    background: white;
-    color: black;
+    background: $invertedBackgroundColor;
+    color: $invertedTextColor;
     clip-path: polygon(100% 50%, 80% 100%, 0 100%, 0 0, 80% 0);
   }
 

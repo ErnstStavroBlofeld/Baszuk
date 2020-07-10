@@ -1,6 +1,9 @@
 $backgroundColor: #000;
 $textColor: #ffffff;
 
+$invertedBackgroundColor: invert($backgroundColor);
+$invertedTextColor: invert($textColor, 100%);
+
 $smallWidth: 600px;
 $mediumWidth: 1000px;
 $largeWidth: 1300px;

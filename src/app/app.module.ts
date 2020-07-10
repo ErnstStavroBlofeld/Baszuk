@@ -10,7 +10,6 @@ import { AboutComponent } from './pages/about/about.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { LinkComponent } from './link/link.component';
-import { ParallaxDirective } from './parallax.directive';
 
 @NgModule({
   declarations: [
@@ -20,8 +19,7 @@ import { ParallaxDirective } from './parallax.directive';
     HomeComponent,
     ContactComponent,
     AboutComponent,
-    NotFoundComponent,
-    ParallaxDirective
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,

@@ -23,7 +23,7 @@ section {
 
   & div {
     font-size: 2em;
-    background: linear-gradient(white, white) no-repeat;
+    background: linear-gradient($invertedBackgroundColor, $invertedBackgroundColor) no-repeat;
     animation: bannerExpand 1s ease-out forwards;
 
     & h1 {
@@ -41,7 +41,7 @@ section {
     display: inline-block;
     width: $strikeWidth;
     height: 2em;
-    background: linear-gradient(white, white) no-repeat;
+    background: linear-gradient($invertedBackgroundColor, $invertedBackgroundColor) no-repeat;
     clip-path: polygon(50% 100%, 0 0, 100% 0);
 
     animation: bannerExpand .15s linear 1s both;
