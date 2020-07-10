@@ -36,6 +36,11 @@ img, svg {
   width: 100%;
 }
 
+a {
+  color: $textColor;
+  text-decoration: none;
+}
+
 ::-webkit-scrollbar {
   width: 10px;
 }
