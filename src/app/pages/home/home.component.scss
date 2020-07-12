@@ -14,7 +14,7 @@ $strikeWidth: min(17vw, 3.25em);
 
 section {
   max-width: $mediumWidth;
-  padding: 3em 0;
+  padding: 3em 1em;
   margin: 0 auto;
 }
 
@@ -43,6 +43,7 @@ section {
     height: 2em;
     background: linear-gradient($invertedBackgroundColor, $invertedBackgroundColor) no-repeat;
     clip-path: polygon(50% 100%, 0 0, 100% 0);
+    transform: translateY(-1px);
 
     animation: bannerExpand .15s linear 1s both;
   }
@@ -63,13 +64,44 @@ section {
 }
 
 .action {
-  padding: 5em 0;
-  text-align: center;
-  font-size: 1.5em;
+  padding: 5em 1em;
+  text-align: right;
+  font-size: 2em;
+
+  & h1 {
+    margin: 0;
+    font-weight: 200;
+  }
+
+  & div {
+    display: flex;
+    justify-content: flex-end;
+
+    & div, a {
+      padding: 0 .5em;
+      display: block;
+      text-align: center;
+
+      & span {
+        display: block;
+        font-size: .5em;
+      }
+    }
+
+    & img {
+      width: 1.5em;
+      height: 1.5em;
+      padding: .5em;
+    }
+  }
 }
 
 @media (max-width: $smallWidth) {
   .showcase {
     text-align: center !important;
+  }
+
+  .action {
+    font-size: 1.25em;
   }
 }
