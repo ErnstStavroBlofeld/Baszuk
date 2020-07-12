@@ -30,7 +30,7 @@ section {
       margin: 0;
       font-size: min(25vw, 5em);
       font-weight: 200;
-      letter-spacing: .265em;
+      letter-spacing: .1em;
       user-select: none;
       mix-blend-mode: difference;
     }
@@ -43,7 +43,6 @@ section {
     height: 2em;
     background: linear-gradient($invertedBackgroundColor, $invertedBackgroundColor) no-repeat;
     clip-path: polygon(50% 100%, 0 0, 100% 0);
-    transform: translateY(-1px);
 
     animation: bannerExpand .15s linear 1s both;
   }
@@ -97,11 +96,22 @@ section {
 }
 
 @media (max-width: $smallWidth) {
+  .banner span {
+    height: 1em;
+    transform: translateY(-.5px);
+  }
+
   .showcase {
     text-align: center !important;
   }
 
   .action {
     font-size: 1.25em;
+    text-align: center;
+
+    & div {
+      justify-content: center;
+      font-size: 1.2em;
+    }
   }
 }
