@@ -1,3 +1,30 @@
-p {
-  text-align: center;
+@import '../../../base';
+
+section {
+  max-width: $mediumWidth;
+  margin: 4em auto;
+
+  & h1 {
+    font-size: 4em;
+    font-weight: 200;
+    margin: 0;
+  }
+
+  & p {
+    max-width: 60%;
+    text-align: justify;
+  }
+
+  &:nth-child(2n) {
+
+    & h1 {
+      text-align: right;
+    }
+
+    & p {
+      padding-left: 40%;
+    }
+  }
 }
+
+
