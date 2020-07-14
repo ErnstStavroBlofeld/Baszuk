@@ -1,25 +1,16 @@
-import { animate, query, style, transition, trigger } from '@angular/animations';
-
-const Optional = {
-  optional: true
-};
+import { animate, query, style, transition, trigger, stagger } from '@angular/animations';
 
 export const RouteAnimation = trigger('routeAnimation', [
   transition('* <=> *', [
-    query(':enter, :leave', [
+    query(':enter section', [
       style({
-        position: 'absolute',
-        left: 0,
-        width: '100%',
         opacity: 0,
-        transform: 'scale(0) translateY(100%)'
-      })
-    ], Optional),
-    query(':enter', [
-      animate(
-        '500ms ease',
-        style({opacity: 1, transform: 'scale(1) translateY(0)'})
-      )
-    ], Optional),
+        transform: 'translateY(10%)'
+      }),
+      stagger('400ms', animate('500ms ease', style({
+        opacity: 1,
+        transform: 'translateY(0)'
+      })))
+    ])
   ])
 ]);
